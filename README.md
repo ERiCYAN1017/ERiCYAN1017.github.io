@@ -8,8 +8,7 @@
 
 您可以通过以下链接访问我的个人主页：
 
-**[https://&lt;您的GitHub用户名&gt;.github.io/](https://<您的GitHub用户名>.github.io/)**
-*(请替换为您自己的 GitHub Pages 链接或 Netlify 链接)*
+**[https://ERiCYAN1017.github.io/](https://ERiCYAN1017.github.io/)**
 
 ## ✨ 网站特色
 
@@ -55,4 +54,4 @@
 * **添加项目经历**：在 `index.html` 中找到 `id="projects"` 的 `<section>`，复制一个已有的 `<div class="project-card">...</div>` 代码块，并修改其中的内容。
 * **添加成果发表**：在 `id="publications"` 的 `<section>` 中，找到对应的 `<ul>` 列表，添加一个新的 `<li>...</li>` 列表项即可。
 * **更换照片**：只需替换根目录下的 `profile.jpg` 文件（建议使用相同的文件名和宽高比）。
-```
+
