@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>严宸旗 - 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo">严宸旗</a>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#experience">实习经历</a></li>
+                <li><a href="#projects">项目经历</a></li>
+                <li><a href="#publications">成果发表</a></li>
+                <li><a href="#skills">个人技能</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="header-content animate-fade-in">
+                <h1>严宸旗</h1>
+                <p class="subtitle">算法工程师 | 上海交通大学硕士在读</p>
+                <p>专注于机器学习、计算机视觉与控制系统 optimization。</p>
+                <a href="#projects" class="btn">查看我的项目</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section hidden">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                
+                <div class="about-image">
+                    <img src="profile.jpg" alt="严宸旗">
+                </div>
+
+                <div class="about-text">
+                    <div class="education-card">
+                        <h3>教育背景</h3>
+                        <ul>
+                            <li>
+                                <strong>硕士 (2024.9 - 至今)</strong>
+                                <p>上海交通大学 - 电子信息与电气工程系</p>
+                            </li>
+                            <li>
+                                <strong>本科 (2020.9 - 2024.6)</strong>
+                                <p>华东师范大学 - 通信与电子工程学院, 通信工程</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="awards-card">
+                        <h3>所获荣誉</h3>
+                        <ul>
+                            <li>2023年华东师范大学“君浩基金”飞翔(学业)奖学金</li>
+                            <li>2020-2021年度华东师范大学优秀学生三等奖学金</li>
+                        </ul>
+                        <h3>学生工作</h3>
+                        <ul>
+                            <li>通信工程班副班长 (2021.9 - 2024.6)</li>
+                            <li>通信工程文艺委员 (2020.9 - 2021.7)</li>
+                        </ul>
+                    </div>
+                </div> </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-light hidden">
+        <div class="container">
+            <h2>实习经历</h2>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>幻量科技 (DeepVerse)</h3>
+                    <span class="exp-date">2024.10 - 2025.7</span>
+                </div>
+                <p class="exp-role">核心算法团队 - 算法工程师</p>
+                
+                <div class="exp-project">
+                    <h4>项目一: 轮毂铸造温度控制系统优化</h4>
+                    <ul>
+                        <li>背景: 分析冷却管对温度控制的影响，实现缩减控制变量下的近似温度曲线控制。</li>
+                        <li>工作: 开发基于因果推断的特征选择方法；构建LSTM模型从特征曲线恢复完整温度曲线，60%案例准确率提升，其余 R²≥0.9。</li>
+                    </ul>
+                </div>
+                <div class="exp-project">
+                    <h4>项目二: 模具温度场重建系统</h4>
+                    <ul>
+                        <li>背景: 基于55万点云数据，通过有限测温点还原完整温度分布。</li>
+                        <li>工作: 采用 Convex Hull/α-shape 提取表面点云；开发混合选点策略；实现POD重建算法 (RMSE<10) 并开发HTML可视化工具。</li>
+                    </ul>
+                </div>
+                <div class="exp-project">
+                    <h4>项目三: 催化剂性能预测平台</h4>
+                    <ul>
+                        <li>背景: 分析多因素对催化剂时空产率(STY)的影响。</li>
+                        <li>工作: 构建 LOCO 分析框架；开发统一模型接口；优化外推性能评估算法，建立模型竞技场。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section hidden">
+        <div class="container">
+            <h2>学校项目经历</h2>
+            
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <h3>无人机检测及自动攻击</h3>
+                    <p class="project-date">研究生实验室项目 (2024.5 - 2024.11)</p>
+                    <p><strong>内容:</strong> 训练YOLOv8, 使用3D模型生成数据集, 编写SIYI A8mini云台Python API, 并通过rospy实现控制, 参与实机仿真与现实实验。</p>
+                    <p><strong>成果:</strong> 实验成功撞下目标, 专利已申请, 论文在投。</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>面向生理参数测量的iPPG信号恢复方法研究</h3>
+                    <p class="project-date">本科毕业设计 (2024.1 - 2024.5)</p>
+                    <p><strong>内容:</strong> 提取人脸ROI的RGB信号, 使用盲源分离(ICA) 和奇异谱分析(SSA) 恢复PPG信号，并在PURE数据集上评估效果。</p>
+                    <p><strong>成果:</strong> 成功提取人脸视频中的iPPG信号与心率信息。</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>基于路损模型原理的5G定位样机开发</h3>
+                    <p class="project-date">本科创新创业项目 (2022.9 - 2023.9)</p>
+                    <p><strong>内容:</strong> 实现FPGA与PC的UART通信, 使用CORDIC算法简化复杂运算, 使用迭代乘法 和伪逆算法 提高运算精度。</p>
+                    <p><strong>成果:</strong> 上海市级创新创业训练项目, 运算时间48us左右, 偏差理想。</p>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section bg-light hidden">
+        <div class="container">
+            <h2>成果发表</h2>
+            <div class="publications-grid">
+                
+                <div class="publication-column">
+                    <h3>专利 (Patents)</h3>
+                    <ul>
+                        <li>
+                            <strong>一种防御攻击型无人机的无人机</strong>
+                            <p>角色: 第三发明人 (已申请)</p>
+                        </li>
+                        <li>
+                            <strong>（未来添加）专利标题</strong>
+                            <p>...</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="publication-column">
+                    <h3>文章 (Papers)</h3>
+                    <ul>
+                        <li>
+                            <strong><a href="https://arxiv.org/abs/2503.22074" target="_blank" rel="noopener noreferrer">Penrose Tiled Low-Rank Compression and Section-Wise Q&A Fine-Tuning: A General Framework for Domain-Specific Large Language Model Adaptation</a></strong>
+                            <p>角色: 第三作者 (Preprint)</p>
+                        </li>
+                        <li>
+                            <strong>（未来添加）文章标题</strong>
+                            <p>期刊/会议: ...</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section hidden">
+        <div class="container">
+            <h2>个人技能</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>编程语言</h3>
+                    <ul>
+                        <li>Python (熟练)</li>
+                        <li>C / C++ (较为熟悉)</li>
+                        <li>Matlab (较为熟悉)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>英语水平</h3>
+                    <ul>
+                        <li>CET-6 (609)</li>
+                        <li>CET-4 (587)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>相关技术</h3>
+                    <ul>
+                        <li>PyTorch, LSTM</li>
+                        <li>YOLOv8, ROS (rospy)</li>
+                        <li>因果推断, 特征选择</li>
+                        <li>FPGA, CORDIC 算法</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <p>期待与您的交流！</p>
+            <ul>
+                <li><strong>邮箱:</strong> yanchenqi@sjtu.edu.cn</li>
+                <li><strong>电话:</strong> 13548192193</li>
+                <li><strong>微信:</strong> 1079740552</li>
+            </ul>
+            <p class="copyright">&copy; 2025 严宸旗. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
