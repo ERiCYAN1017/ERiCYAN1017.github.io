@@ -1,6 +1,6 @@
-# 严宸旗的个人主页 (Chenqi Yan's Personal Portfolio)
+# 个人主页 (Personal Portfolio)
 
-这是严宸旗 (Chenqi Yan) 的个人作品集网站。
+这是个人作品集网站。
 
 该网站是一个简洁的单页响应式网页，用于展示我的教育背景、实习经历、项目成果、学术发表和个人技能。
 
